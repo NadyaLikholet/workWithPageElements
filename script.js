@@ -19,7 +19,19 @@ const PersonalMovieDB = {
 for (let i = 0; i < 2; i++) 
 { let a = prompt('Один из последних просмотренных фильмов?',''),
       b = prompt('На сколько его оцените?','');  
-  PersonalMovieDB.movies[a] = b;  
+      
+      if (a.length == 0 ) {
+          return;
+      } else {if (a.length > 50) {
+          alert("Длина больше 50 симвовов. Будьте краткими пожалуйста")
+      } else {
+          
+      }
+          
+      }
+
+      PersonalMovieDB.movies[a] = b; 
+
 }
 
 
