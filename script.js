@@ -22,7 +22,7 @@ for (let i = 0; i < 2; i++)
       
       if (a != null && b!=null && a !='' && b!='' &&  a.length < 50) {
         PersonalMovieDB.movies[a] = b;
-        console.log("Ready");
+        console.log("Good work");
       } else {
           console.log("Wrong answer");
           i--;
