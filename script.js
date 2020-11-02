@@ -1,4 +1,4 @@
-const NumberOfFilms = prompt("Сколько фильмов вы посмотрели за последнее время?","");
+const NumberOfFilms = +prompt("Сколько фильмов вы посмотрели за последнее время?","");
 
 const PersonalMovieDB = {
     count: NumberOfFilms,
@@ -27,11 +27,18 @@ for (let i = 0; i < 2; i++)
           console.log("Wrong answer");
           i--;
       }
-          
-      
+}
 
-       
-
+if (PersonalMovieDB.count < 10) {
+    console.log("Вы посмотрели достатчно мало фильмов");
+} else { if (PersonalMovieDB.count>=10 && PersonalMovieDB.count < 30) {
+    console.log("Вы классический зритель");
+} else { if (PersonalMovieDB.count > 30) {
+    console.log("Вы киноман");
+}
+  else {console.log("Произошла ошибка");} 
+}
+    
 }
 
 
