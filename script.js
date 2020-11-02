@@ -79,5 +79,4 @@ function ShowMyDB(hidden) {
    }  
 }
 
-let prm = PersonalMovieDB.privat;
-function ShowMyDB(prm) {}
+ShowMyDB(PersonalMovieDB.privat);
