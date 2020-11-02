@@ -20,17 +20,17 @@ for (let i = 0; i < 2; i++)
 { let a = prompt('Один из последних просмотренных фильмов?',''),
       b = prompt('На сколько его оцените?','');  
       
-      if (a.length == 0 ) {
-          return;
-      } else {if (a.length > 50) {
-          alert("Длина больше 50 симвовов. Будьте краткими пожалуйста");
+      if (a != null && b!=null && a !='' && b!='' &&  a.length < 50) {
+        PersonalMovieDB.movies[a] = b;
+        console.log("Ready");
       } else {
-          
+          console.log("Wrong answer");
+          i--;
       }
           
-      }
+      
 
-      PersonalMovieDB.movies[a] = b; 
+       
 
 }
 
