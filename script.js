@@ -80,3 +80,14 @@ function ShowMyDB(hidden) {
 }
 
 ShowMyDB(PersonalMovieDB.privat);
+
+function WriteYourGenres() {
+    for (let index = 1; index <= 3; index++) {
+        const element = prompt('Ваш любимый жарн под номером ' + index,'');
+        PersonalMovieDB.genres[index]  = element;
+        
+    }
+        
+    }
+
+    WriteYourGenres();
