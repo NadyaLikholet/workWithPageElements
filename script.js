@@ -66,6 +66,3 @@ let PersonalMovieDB = {
      
     
 };
-
-let arrMovie = PersonalMovieDB.RememberMyFilms();
-console.log(PersonalMovieDB);
