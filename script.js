@@ -73,4 +73,7 @@ function WriteYourGenres() {
         
     }
 
-    WriteYourGenres();
+WriteYourGenres();
+
+let arrMovie = PersonalMovieDB.RememberMyFilms();
+console.log(arrMovie);
