@@ -1,4 +1,4 @@
-'use strict';
+//'use strict';
 
 let PersonalMovieDB = {
     count: 0,
@@ -48,12 +48,20 @@ let PersonalMovieDB = {
      },
     
     WriteYourGenres: function () {
-    for (let index = 1; index <= 3; index++) {
-        const element = prompt('Ваш любимый жарн под номером ' + index,'');
-        //const element = prompt(`Ваш любимый жарн под номером $(index)`);
-       PersonalMovieDB.genres[index-1]  = element;
-        
-    }
+    for (let i = 1; i <= 3; i++) {
+        const item = prompt('Ваш любимый жанр под номером ' + i,'');
+        //const item = prompt(`Ваш любимый жарн под номером $(index)`);
+        if (item === '' || item == null){
+            console.log("Ответьте пожалуйста на вопросы");
+            i--;
+        } 
+        else{
+            PersonalMovieDB.genres[i-1]  = item;            
+        }
+        PersonalMovieDB.genres.forEach((item,i) => { 
+            console.log(`Любимый жанр $(i + 1) - это ${item}`);
+        });
+        }
     },
     toggleVisibleMyDB: function(){
         if (PersonalMovieDB.privat) {
@@ -66,3 +74,6 @@ let PersonalMovieDB = {
      
     
 };
+//let y = 1; let x = y = 2; console.log(x);
+//console.log(( 1 && 2 ));  (1 && 2);
+console.log(+"Infinity");
